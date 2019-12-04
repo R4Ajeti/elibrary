@@ -1,3 +1,4 @@
+/* eslint-env browser */
 
 let myLibrary = [];
 const ul = document.querySelector('ul.books');
