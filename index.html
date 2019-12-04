@@ -7,33 +7,72 @@
 
     <title>THis is an public Electronic Library</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogCaroselStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
 <body>
-
-    <div>
-        <h1>This is library papu </h1>
-        <div>
+    <div class="container">
+        <div id="header" class="jumbotron">
+            <h1>This is library papu </h1>
+            <p>Feel free to add your prefered books here! :p</p>
+        </div>
+        <div id="alerts" role="alert"></div>
+        
+        <div class="main_form">
+                <div class="jumbotron smalljumbotron">
+                    <h1>Wana share with us your book?</h1>
+                    <p>&nbsp&nbsp If so fill the form below</p>
+                </div>
+                <form class="needs-validation" novalidate onsubmit="return false">
+                        <div class="form-row align-items-center">
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInput">Title</label>
+                            <input type="text" class="form-control mb-2" id="title" placeholder="Title" required>
+                            <div class="valid-feedback">
+                                 Looks good!
+                            </div>
+                          </div>
+                          
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Author</label>
+                            <div class="input-group mb-2">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                              </div>
+                              <input type="text" class="form-control" id="author" placeholder="Author" required>
+                              <div class="valid-feedback">
+                                 Looks good!
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-auto">
+                             <label class="sr-only" for="inlineFormInput">Pages</label>
+                             <input type="number" class="form-control mb-2" id="pages" placeholder="Number of pages?" min="0" data-bind="value:replyNumber" required>
+                             <div class="invalid-feedback">
+                                 Please provide us the number of pages for this book!
+                             </div>
+                          </div>
+                          <div class="col-auto">
+                            <button type="submit"  class="btn btn-outline-primary" value="Add book">ADD BOOK</button>
+                          </div>
+                        </div>
+                </form>
+            </div>
+        <div class="jumbotron smalljumbotron center">
+            <h1>Wana read some awesome books?</h1>
+            <p>&nbsp&nbsp If so take a look down below</p>
+        </div>
+        <div class="row">
             <ul class="books">
-
             </ul>
         </div>
-        <div class="main_form">
-            <label for="title">Title:</label>
-            <input type="text" class="title"><br>
-            <label for="title">Author:</label>
-            <input type="text" class="author"><br>
-            <label for="title">Pages:</label>
-            <input type="number" class="pages"><br>
-
-            <input type="button" class="btn" value="Add book">
-        </div>
-
+        
     </div>
 
 </body>
 
 <script type="text/javascript" src="js/model.js"></script>
-
 </html>
