@@ -18,8 +18,8 @@ function addBookToLibrary(title, author, pages) {
   let index = myLibrary.length;
   myLibrary[index] = new Book(title, author, pages);
   let authorAlert = myLibrary[index].author; let titleAlert = myLibrary[index].title;
-  alerts("success", "A book \""+titleAlert+"\" from "+authorAlert+" has been successful added");
-  console.log("A book \""+titleAlert+"\" from "+authorAlert+" has been successful added");
+  alerts("success", `A book $titleAlert from $authorAlert has been successful added`);
+  console.log(`A book $titleAlert from $authorAlert has been successful added`);
 }
 
 function checked(bool){
@@ -89,8 +89,8 @@ function removeBook(index) {
   let authorAlert = myLibrary[index].author; let titleAlert = myLibrary[index].title;
   myLibrary.splice(index, 1);
   displayAllBooks();
-  alerts("bookRemoved", "A book \""+titleAlert+"\" from "+authorAlert+" has been successful removed");
-  console.log("A book \""+titleAlert+"\" from "+authorAlert+" has been successful removed");
+  alerts("bookRemoved", `A book $titleAlert from $authorAlert has been successful removed`);
+  console.log(`A book $titleAlert from "+authorAlert has been successful removed`);
 }
 
 function toggleReaded(index){
