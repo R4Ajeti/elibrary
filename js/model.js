@@ -75,25 +75,7 @@ function displayAllBooks() {
           <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read" onClick ="removeBook(${i})">remove</a> </div>
       </div>
       </div>`;
-    /*
-        li.innerHTML = "<p>" + cloneLib[i].title + "</p>" +
-          "<p>" + cloneLib[i].author + "</p>" +
-          "<p>" + cloneLib[i].pages + "</p>";
-
-        let cb = document.createElement("input");
-        cb.setAttribute("type", "checkbox");
-        cb.setAttribute("onclick", "toggleReaded(" + i +")");
-        cb.checked = cloneLib[i].read;
-
-        li.appendChild(cb);
-
-        let a = document.createElement("a");
-        a.setAttribute("href", "#");
-        a.setAttribute("onclick", "removeBook(" + i + ")");
-        a.innerHTML = "Remove";
-
-        li.appendChild(a);
-    */
+    
     const divN = document.createElement('div');
     divN.className = 'clearfix visible-*';
     ul.appendChild(li);
