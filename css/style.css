@@ -1,0 +1,66 @@
+*{
+    font-family: 'Syncopate', sans-serif;
+}
+
+#header{
+    width: 100%;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+.main_form{
+    border: 3px #6c757d solid;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+.main_form .jumbotron{
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 3px #6c757d solid;
+}
+
+.smalljumbotron h1{
+    font-size: 16px;
+}
+
+.smalljumbotron p{
+    font-size: 12px;
+}
+
+body .main_form > div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+body .main_form > div div:nth-of-type(1){
+    width: 70%;
+}
+
+body .main_form > div div:nth-of-type(2){
+    box-sizing: border-box;
+    padding: 20px;
+    width: 30%;
+}
+
+body .main_form > div div:nth-of-type(2) input{
+    box-sizing: border-box;
+    margin: 5px 0 5px 0;
+    width: 100%;
+}
+
+ul{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+} 
+
+li{ 
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
