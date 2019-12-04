@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/R4Ajeti/elibrary/issues"
   },
-  "homepage": "https://github.com/R4Ajeti/elibrary#readme"
+  "homepage": "https://github.com/R4Ajeti/elibrary#readme",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
