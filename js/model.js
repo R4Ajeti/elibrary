@@ -75,7 +75,6 @@ function displayAllBooks() {
           <div class="mt"> <a href="#" tabindex="0" class="btn bg-blue-ui white read" onClick ="removeBook(${i})">remove</a> </div>
       </div>
       </div>`;
-    
     const divN = document.createElement('div');
     divN.className = 'clearfix visible-*';
     ul.appendChild(li);
